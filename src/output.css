@@ -1735,6 +1735,11 @@
       padding-right: calc(var(--spacing) * 30);
     }
   }
+  .md\:pr-40 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 40);
+    }
+  }
   .md\:pb-10 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 10);
@@ -1768,6 +1773,11 @@
   .md\:pl-30 {
     @media (width >= 48rem) {
       padding-left: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:pl-40 {
+    @media (width >= 48rem) {
+      padding-left: calc(var(--spacing) * 40);
     }
   }
   .md\:text-center {
@@ -1850,6 +1860,11 @@
     @media (width >= 48rem) {
       --tw-leading: 41px;
       line-height: 41px;
+    }
+  }
+  .lg\:left-0 {
+    @media (width >= 64rem) {
+      left: 0;
     }
   }
   .lg\:m-0 {
@@ -1967,6 +1982,11 @@
       margin-left: calc(var(--spacing) * 15);
     }
   }
+  .lg\:ml-\[-0px\] {
+    @media (width >= 64rem) {
+      margin-left: -0px;
+    }
+  }
   .lg\:ml-\[-20\] {
     @media (width >= 64rem) {
       margin-left: -20;
@@ -2002,9 +2022,34 @@
       margin-left: -190px;
     }
   }
+  .lg\:ml-\[-600px\] {
+    @media (width >= 64rem) {
+      margin-left: -600px;
+    }
+  }
   .lg\:ml-\[-690px\] {
     @media (width >= 64rem) {
       margin-left: -690px;
+    }
+  }
+  .lg\:ml-\[-750px\] {
+    @media (width >= 64rem) {
+      margin-left: -750px;
+    }
+  }
+  .lg\:ml-\[-790px\] {
+    @media (width >= 64rem) {
+      margin-left: -790px;
+    }
+  }
+  .lg\:ml-\[-930px\] {
+    @media (width >= 64rem) {
+      margin-left: -930px;
+    }
+  }
+  .lg\:ml-\[-\] {
+    @media (width >= 64rem) {
+      margin-left: -;
     }
   }
   .lg\:ml-\[0px\] {
@@ -2077,6 +2122,16 @@
       width: calc(var(--spacing) * 130);
     }
   }
+  .lg\:w-\[0\%\] {
+    @media (width >= 64rem) {
+      width: 0%;
+    }
+  }
+  .lg\:w-\[10\%\] {
+    @media (width >= 64rem) {
+      width: 10%;
+    }
+  }
   .lg\:w-\[30\%\] {
     @media (width >= 64rem) {
       width: 30%;
@@ -2095,6 +2150,31 @@
   .lg\:w-\[40\] {
     @media (width >= 64rem) {
       width: 40;
+    }
+  }
+  .lg\:w-\[50\%\] {
+    @media (width >= 64rem) {
+      width: 50%;
+    }
+  }
+  .lg\:w-\[50\] {
+    @media (width >= 64rem) {
+      width: 50;
+    }
+  }
+  .lg\:w-\[60\%\] {
+    @media (width >= 64rem) {
+      width: 60%;
+    }
+  }
+  .lg\:w-\[100\%\] {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
+  .lg\:w-\[130\%\] {
+    @media (width >= 64rem) {
+      width: 130%;
     }
   }
   .lg\:w-\[400px\] {
@@ -2248,6 +2328,11 @@
       background-image: url('/src/images/startup-3.png');
     }
   }
+  .lg\:to-70\% {
+    @media (width >= 64rem) {
+      --tw-gradient-to-position: 70%;
+    }
+  }
   .lg\:p-0 {
     @media (width >= 64rem) {
       padding: 0;
@@ -2296,6 +2381,11 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
+    }
+  }
+  .lg\:text-start {
+    @media (width >= 64rem) {
+      text-align: start;
     }
   }
   .lg\:text-2xl {
@@ -2489,6 +2579,48 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2523,6 +2655,15 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
     }
   }
 }
