@@ -450,6 +450,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[65px\] {
+    height: 65px;
+  }
   .h-\[70\%\] {
     height: 70%;
   }
@@ -477,8 +480,20 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-18 {
+    width: calc(var(--spacing) * 18);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-22 {
+    width: calc(var(--spacing) * 22);
   }
   .w-23 {
     width: calc(var(--spacing) * 23);
@@ -654,6 +669,9 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .self-start {
+    align-self: flex-start;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -719,6 +737,9 @@
   }
   .bg-\[\#EEF1F4\] {
     background-color: #EEF1F4;
+  }
+  .bg-\[\#F7F7F7\] {
+    background-color: #F7F7F7;
   }
   .bg-\[whi\] {
     background-color: whi;
@@ -976,11 +997,17 @@
   .text-\[23px\] {
     font-size: 23px;
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
   .text-\[25px\] {
     font-size: 25px;
   }
   .text-\[26px\] {
     font-size: 26px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -1493,6 +1520,11 @@
       width: 2;
     }
   }
+  .md\:w-\[4\%\] {
+    @media (width >= 48rem) {
+      width: 4%;
+    }
+  }
   .md\:w-\[29px\] {
     @media (width >= 48rem) {
       width: 29px;
@@ -1506,6 +1538,26 @@
   .md\:w-\[30\%\] {
     @media (width >= 48rem) {
       width: 30%;
+    }
+  }
+  .md\:w-\[40\%\] {
+    @media (width >= 48rem) {
+      width: 40%;
+    }
+  }
+  .md\:w-\[41\%\] {
+    @media (width >= 48rem) {
+      width: 41%;
+    }
+  }
+  .md\:w-\[43\%\] {
+    @media (width >= 48rem) {
+      width: 43%;
+    }
+  }
+  .md\:w-\[45\%\] {
+    @media (width >= 48rem) {
+      width: 45%;
     }
   }
   .md\:w-\[50\%\] {
@@ -1601,6 +1653,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:flex-wrap {
+    @media (width >= 48rem) {
+      flex-wrap: wrap;
     }
   }
   .md\:items-start {
@@ -1863,6 +1920,11 @@
   .lg\:mt-\[-150px\] {
     @media (width >= 64rem) {
       margin-top: -150px;
+    }
+  }
+  .lg\:mr-0 {
+    @media (width >= 64rem) {
+      margin-right: 0;
     }
   }
   .lg\:ml-0 {
